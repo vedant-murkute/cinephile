@@ -1,0 +1,160 @@
+
+/* navbar */
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links li:last-child {
+  margin-right: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff9900; 
+}
+
+/* search bar */
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 40%;
+}
+
+.search-bar-container input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.search-bar-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-bar-container button:hover {
+  background-color: #45a049;
+}
+
+/* Card */
+.card {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+  margin-bottom: 20px;
+  width: 70%;
+}
+
+/* .card-action{
+  display: flex;
+  gap:10;
+} */
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* .poster {
+  width: 150px;
+  height: 225px;
+  object-fit: cover;
+  border-radius: 10px 0 0 10px;
+  position: relative;
+} */
+
+.details {
+  padding: 20px;
+}
+
+.details h2 {
+  margin: 0 0 10px;
+}
+
+.details p {
+  margin: 0 0 8px;
+  font-size: 16px;
+  color: #555;
+}
+
+.details p:first-child {
+  font-weight: bold;
+}
+
+/* dynamic list */
+.movie-list-container{
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip Content (Initially Hidden) */
+.tooltip .tooltip-text {
+  visibility: hidden;
+  width: 150px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+/* Tooltip Content Visible on Hover */
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
