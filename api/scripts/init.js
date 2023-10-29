@@ -1,8 +1,8 @@
 const axios = require("axios");
 const mysql = require("mysql2");
 
-const XRapidAPIKey = "c32b52ee8dmshc8c69cb7bfcb998p18d113jsn5b0940b502d1";
-// const url = "https://moviesdatabase.p.rapidapi.com/titles/x/upcoming";
+const XRapidAPIKey = <CREATE API KEY>;
+
 const url = "https://moviesdatabase.p.rapidapi.com/titles";
 const headers = {
   "X-RapidAPI-Key": XRapidAPIKey,
