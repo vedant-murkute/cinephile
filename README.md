@@ -4,7 +4,7 @@ A CRUD application using MySQL as the database, Express as the backend, and Reac
 
 ## Backend Setup
 
-Connect to a MySQL server and add the server details in .env file. Run the api/scripts/index.js to create the schema in the database.
+Connect to a MySQL server locally and add the server details in .env file. Run the api/scripts/index.js to create the schema in the database.
 
 In the api directory, run 
 `nodemon app.js`
